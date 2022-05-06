@@ -35,6 +35,7 @@ const Sidebar = ({ modalSidebar }) => {
   const handleSubmit = (values) => {
     const nombre = modalSidebar.nombre;
     dispatch(editAsync(nombre, values));
+    setClicked(false);
   };
 
   return (
